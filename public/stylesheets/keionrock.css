@@ -24,11 +24,21 @@ body {
 	margin-bottom: 400px;
 	text-shadow: 0 1px 2px black;
 	text-shadow: 0 3px 7px black;
-	text-shadow: 0 6px 20px black;
+  text-shadow: 0 6px 20px black;
 }
-.h1 {
-	text-align: center;
+.jumbotron h1 {
+  text-align: center;
+  animation: fadeIn 3s linear 0s 1 normal;
 }
+.jumbotron h3 {
+  animation: fadeIn 3s ease-in 0s 1 normal;
+
+}
+
+
+
+
+
 html {
 	height: 100%;
 }
@@ -142,4 +152,12 @@ html {
   30% {
     opacity: 0
   }
+}
+
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
 }
