@@ -11,8 +11,13 @@ body {
 	background-position: bottom;
 	font-family: 'Sawarabi Mincho', sans-serif;
 	background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 100%;
+}
+
+body::before{
+  background-size: cover;
+  position: fixed;
 }
 
 .home {

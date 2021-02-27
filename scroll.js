@@ -21,7 +21,7 @@ jQuery(window).on('scroll', function () {
 });
 
 jQuery(window).on('scroll', function () {
-    if (jQuery('.main-message').height() * 6 < jQuery(this).scrollTop()) {
+    if (jQuery('.main-message').height() * 3 < jQuery(this).scrollTop()) {
         jQuery('.slideshow').addClass('blur');
 
     } else {
