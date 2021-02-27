@@ -1,6 +1,7 @@
 .container {
 	text-align: center;
-	margin: 0 auto;
+	/* margin: 0 auto; */
+  margin-bottom: 0%;
 	margin-top: 5%;
 }
 
@@ -11,10 +12,11 @@ body {
 	font-family: 'Sawarabi Mincho', sans-serif;
 	background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100%;
 }
 
 .home {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
 }
 
@@ -42,6 +44,7 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+
 .jumbotron {
 	position: relative;
 	width: 100%;
@@ -49,7 +52,7 @@ body {
 	z-index: 1;
 	background-color: rgb(0,0,0,0);
 	color: white;
-	margin-bottom: 400px;
+	margin-bottom: 600px;
 	text-shadow: 0 1px 2px black;
 	text-shadow: 0 3px 7px black;
   text-shadow: 0 6px 20px black;
@@ -60,27 +63,40 @@ body {
 }
 .jumbotron h3 {
   animation: fadeIn 3s ease-in 0s 1 normal;
-
 }
 
-
-
-
+.main-message{
+  margin-top: 10%;
+}
 
 html {
 	height: 100%;
 }
+div{
+  font-size: 105%;
+  letter-spacing: 0.5px;
+}
 
+p.question{
+  cursor: pointer;
+}
+p.question:hover{
+  text-decoration: underline;
+}
+p.answer{
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  margin-left: 1em;
+  padding: 10px;
+  border-radius: 10px;
+}
 .navbar {
-	background-color: rgb(0,0,0,0.15);
+	background-color: rgba(36, 36, 36, 0.384);
 	transition: all 0.4s;
 }
 .navbar:hover {
 	background-color: rgb(0,0,0,0.5);
 }
-
-
-
 .navbar-default .navbar-toggle {
     border-color: rgb(0,0,0,0);
 }
@@ -119,9 +135,44 @@ html {
 
 .container {
 	margin-bottom: 100px;
+  padding: 0%;
+}
+
+.questions {
+  text-align: left;
+}
+
+.page-section{
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 5%;
+  text-align: center;
+  transition: all .4s;
+  overflow: hidden;
+}
+.about{
+  height: auto;
+}
+.join{
+  height: auto;
 }
 
 
+.grayback{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.pagecontainer{
+  margin: auto;
+}
+
+.faq {
+  margin: 0%;
+  padding: 20%;
+}
 .slideshow { 
   position: fixed;
   width: 100%;
@@ -132,6 +183,15 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
+  transition: all .5s;
+
+}
+
+.blur{
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  filter: blur(6px);
 }
 
 .slideshow li { 
@@ -146,6 +206,13 @@ html {
   opacity: 0;
   z-index: 0;
   animation: imageAnimation 50s linear infinite; 
+}
+
+.link{
+  color: aliceblue;
+}
+.link:hover{
+  color: rgb(155, 208, 255);
 }
 
 #im1 { 
@@ -209,3 +276,4 @@ hr {
   border-width: 1px 0 0 0;
   border-radius: 5px;
 }
+
