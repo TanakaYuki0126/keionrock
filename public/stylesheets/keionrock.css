@@ -200,7 +200,7 @@ p.answer{
 }
 .slideshow li { 
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -211,7 +211,11 @@ p.answer{
   z-index: 0;
   animation: imageAnimation 50s linear infinite; 
 }
-
+@media screen and (min-width: 960px){
+  .slideshow li{
+    height: 100vh !important; 
+  }
+}
 .link{
   color: aliceblue;
 }

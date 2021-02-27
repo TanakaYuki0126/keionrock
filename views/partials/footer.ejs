@@ -9,16 +9,11 @@
 <!-- <script type="text/javascript" src="maps.js"></script> -->
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&family=Sawarabi+Mincho&display=swap"
     rel="stylesheet">
+<div class="bg_pc bg_sp bg_01"></div>
 <script>
-    document.body.onload = () => {
-        document.body.style.minHeight = window.innerHeight + "px";
-    }
-    let timeoutId;
-    window.addEventListener("resize", () => {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-            document.body.style.minHeight = window.innerHeight * "px";
-        }, 500);
+    $(document).ready(function () {
+        var heightSize = $(window).height();
+        $('.slideshow li').height(heightSize);
     });
 </script>
 </body>
