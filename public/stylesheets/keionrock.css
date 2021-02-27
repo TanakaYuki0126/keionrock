@@ -170,6 +170,8 @@ p.answer{
   padding: auto;
   text-align: center;
   overflow: hidden;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .faq {
