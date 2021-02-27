@@ -9,7 +9,18 @@
 <!-- <script type="text/javascript" src="maps.js"></script> -->
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&family=Sawarabi+Mincho&display=swap"
     rel="stylesheet">
-
+<script>
+    document.body.onload = () => {
+        document.body.style.minHeight = window.innerHeight + "px";
+    }
+    let timeoutId;
+    window.addEventListener("resize", () => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+            document.body.style.minHeight = window.innerHeight * "px";
+        }, 500);
+    });
+</script>
 </body>
 
 </html>
