@@ -70,15 +70,22 @@ html {
 	height: 100%;
 }
 div{
-  font-size: 105%;
+  font-size: 100%;
   letter-spacing: 0.5px;
+}
+
+div.about {
+  font-size: 150%;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 p.question{
   cursor: pointer;
 }
 p.question:hover{
-  text-decoration: underline;
+  text-decoration: underline; 
 }
 p.answer{
   display: none;
@@ -274,6 +281,7 @@ p.answer{
 
 ul {
   list-style: none;
+  padding: 0%;
 }
 
 hr {
