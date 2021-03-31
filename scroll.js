@@ -30,6 +30,8 @@ jQuery(window).on('scroll', function () {
 });
 
 $(document).ready(function () {
+    var heightSize = $(window).height();
+    $(".slideshow li").height(heightSize);
     $(".navbar-nav li a").click(function (event) {
         $(".navbar-collapse").collapse('hide');
     });
@@ -40,4 +42,5 @@ $(document).ready(function () {
     $("p.question").on("click", function () {
         $(this).next().slideToggle(200);
     });
+
 });
