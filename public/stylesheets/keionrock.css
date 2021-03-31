@@ -81,6 +81,20 @@ div.about {
   margin-bottom: 80px;
 }
 
+h1 {
+  	text-shadow: 0 2px 3px black;
+  	text-shadow: 0 3px 7px black;
+}
+
+
+.box {
+  border: 4px double #ddd;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+
+
 p.question{
   cursor: pointer;
 }
@@ -220,7 +234,7 @@ p.answer{
 }
 @media screen and (min-width: 960px){
   .slideshow li{
-    height: 100vh !important; 
+    height: 120vh !important; 
   }
 }
 .link{
