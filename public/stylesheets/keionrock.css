@@ -232,9 +232,9 @@ p.answer{
   z-index: 0;
   animation: imageAnimation 50s linear infinite; 
 }
-@media screen and (min-width: 960px){
+@media screen and (max-width: 1300px){
   .slideshow li{
-    height: 150vh !important; 
+    height: 120vh !important; 
   }
 }
 .link{
