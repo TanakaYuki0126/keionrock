@@ -31,7 +31,7 @@ jQuery(window).on('scroll', function () {
 
 $(document).ready(function () {
     var heightSize = $(window).height();
-    $(".slideshow li").height(heightSize * 1.3);
+    $(".slideshow li").height(heightSize * 2);
     $(".navbar-nav li a").click(function (event) {
         $(".navbar-collapse").collapse('hide');
     });
