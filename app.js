@@ -29,5 +29,5 @@ app.get("/links", function (req, res) {
 
 
 app.listen(port, function () {
-    console.log("Keiron Rock server started")
+    console.log(`Keiron Rock server started at http://localhost:${port}`)
 });
