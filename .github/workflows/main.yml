@@ -12,4 +12,4 @@ jobs:
         run: |
           echo "${{ secrets.PRIVATE_KEY }}" > private_key
           chmod 600 private_key
-          ssh -oStrictHostKeyChecking=no ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }} -i private_key "cd keionrock2" && git fetch github:TanakaYuki0126/keionrock.git && git pull github:TanakaYuki0126/keionrock.git
+          ssh -o StrictHostKeyChecking=no ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }} -i private_key "cd keionrock2" && git fetch github:TanakaYuki0126/keionrock.git && git pull github:TanakaYuki0126/keionrock.git
