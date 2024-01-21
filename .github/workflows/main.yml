@@ -11,4 +11,5 @@ jobs:
       - name: Deploy
         run: |
           echo "${{ secrets.PRIVATE_KEY }}" > private_key && chmod 600 private_key
-          ssh -tt -oStrictHostKeyChecking=no -i private_key ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }} 
+          ssh -tt -oStrictHostKeyChecking=no -i private_key ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }}
+          "cd keionrock2 && git fetch github:TanakaYuki0126/keionrock.git && git pull github:TanakaYuki0126.git"
