@@ -12,6 +12,11 @@ app.get("/", function (req, res) {
     res.render("homepage");
 });
 
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send("Internal Server Error...")
+})
+
 app.listen(port, function () {
     console.log(`Keion Rock server started at port:${port}`)
 });
