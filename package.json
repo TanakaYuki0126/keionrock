@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "npm-run-all --parallel start:*",
+    "start:nodemon": "nodemon app.js",
+    "start:sync": "browser-sync start --config bs-config.js"
   },
   "author": "tanaka",
   "license": "ISC",
@@ -17,5 +19,8 @@
     "node": "12.18.1",
     "npm": "6.14.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "npm-run-all": "^4.1.5"
+  }
 }

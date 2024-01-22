@@ -18,5 +18,5 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(port, function () {
-    console.log(`Keion Rock server started at port:${port}`)
+    console.log(`Keion Rock server started at http://localhost:${port}`)
 });
