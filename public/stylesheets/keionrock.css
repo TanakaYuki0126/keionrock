@@ -79,11 +79,16 @@ div.about {
   letter-spacing: 0.5px;
   margin-top: 40px;
   margin-bottom: 80px;
+  padding-inline: 10%;
+}
+
+div.about p{
+  text-align: left;
 }
 
 h1 {
-  	text-shadow: 0 2px 3px black;
-  	text-shadow: 0 3px 7px black;
+  text-shadow: 0 2px 3px black;
+  text-shadow: 0 3px 7px black;
 }
 
 
